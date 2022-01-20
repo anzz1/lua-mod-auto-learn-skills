@@ -8,6 +8,11 @@ local AnnounceModule = true   -- Announce module on player login ?
 local AutoDualSpec   = true   -- Auto learn Dual Specialization
 local AutoRiding     = true   -- Auto learn Riding 
 
+local NorthrendFlyLevel = 68  -- Which level to learn Cold Weather Flying
+                              -- (68 = When alt characters can learn from Tome of Cold Weather Flight)
+                              -- (77 = Level to learn it from trainer, for first character)
+                              -- (81 = disable, never autolearn Cold Weather Flying)
+
 ------------------------------------------------------------------------------------------------
 -- END CONFIG
 ------------------------------------------------------------------------------------------------
@@ -905,7 +910,7 @@ local RIDING = {
     [20] = {33388}, -- Apprentince Riding (75)
     [40] = {33391}, -- Journeyman Riding (150)
     [60] = {34090}, -- Expert Riding (225)
-    [68] = {54197}, -- Cold Weather Flying
+    [NorthrendFlyLevel] = {54197}, -- Cold Weather Flying
     [70] = {34091}, -- Artisan Riding (300)
 }
 
